@@ -1,0 +1,8 @@
+# to start flake8
+docker-compose run --rm app sh -c "flake8"
+
+# to create django project
+docker-compose run --rm app sh -c "django-admin startproject app ."
+
+# to start docker services (start the server)
+docker-compose up
